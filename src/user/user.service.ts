@@ -69,7 +69,7 @@ export class UserService {
           whereClause.created_at = LessThanOrEqual(dateValue);
           break;
         default:
-          throw new BadRequestException('Invalid operator at created_at field');
+          throw new BadRequestException('Invalid operator for created_at field');
       }
     }
 
